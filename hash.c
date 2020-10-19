@@ -1,5 +1,5 @@
 
-char michaelsDumbHash(char* str) {
+char michaelsDumbHash(const char* str) {
     char result = 0;
 
     // assume a NULL-terminated string; loop through

@@ -1,6 +1,6 @@
 #ifndef hash_h
 #define hash_h
 
-char michaelsDumbHash(char* str);
+char michaelsDumbHash(const char* str);
 
 #endif
