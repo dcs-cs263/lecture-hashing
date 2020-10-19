@@ -5,10 +5,13 @@ char michaelsDumbHash(char* str) {
 
     // assume a NULL-terminated string; loop through
     // all characters in the string
-    while(*str++ != '\0') {
+    while(*str != '\0') {
         // add the numeric value of the character to
         // the result mod 20
         result = (result + *str) % 20;
+
+        // advance pointer
+        str++;
     }
 
     // return a number between 0 and 19
@@ -16,7 +19,7 @@ char michaelsDumbHash(char* str) {
 }
 
 int main() {
-    char* str = "I hate Thursdays";
+    char* str = "9ams are the worst";
 
     // print the hash of a string
     printf("michaelsDumbHash(%s)=%d\n",
